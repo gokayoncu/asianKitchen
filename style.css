@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
 }
-
+.text-color{
+  color: #111 !important;
+}
 body {
   margin: 0;
   padding: 0;
@@ -14,6 +16,9 @@ h2 {
   font-size: 3rem;
   text-align: center;
   color: #ff6a23;
+}
+h3{
+  font-family: "Great Vibes", cursive;
 }
 .menu {
   margin-top: 20px;
@@ -38,7 +43,9 @@ h2 {
 }
 .menu-items {
   display: flex;
-  margin: 20px 0;
+  margin: 6rem 0;
+  position: relative;
+  color: transparent;
 }
 .menu-info {
   margin-left: 20px;
@@ -78,4 +85,6 @@ img{
 .list-group{
   display: flex;
   flex-direction: row;
+  position: absolute;
+  left: 0;
 }

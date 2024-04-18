@@ -105,16 +105,16 @@ const menuList = (menuItems)=>{
                       src=${item.img}
                       alt=${item.title}
                       class="photo"/>
-                    <div class="menu-info">
-                      <div class="menu-title">
-                        <li class="head">${item.title}</li>
-                        <h4 class="price">${item.price}</h4>
+                    <div class="menu-info text-color">
+                      <div class="menu-title text-color">                        
+                        <h3 class="price text-color">${item.title}</h3>
+                        <h4 class="price text-color">${item.price}</h4>
                       </div>
-                      <div class="menu-text">
+                      <div class="menu-text text-color">
                         ${item.desc}
                       </div>
                     </div>
-                </div>
+            ${item.title} </div>
             </div> ` ;
   });
 
@@ -153,20 +153,20 @@ categoryList();
 
 // const listItems= document.querySelectorAll(".head");
 // const newMenu = document.querySelectorAll(".list-group");
+
 // Search İnput
 function search(e){
-  const filterValue = e.target.value.toUpperCase().trim();
-  const listItems= document.querySelectorAll(".head");
+  const filterValue = e.target.value.toUpperCase().trim();  
   const newMenu = document.querySelectorAll(".list-group");
   // console.log(filterValue)
   
-  listItems.forEach((toDo)=>{    
+  newMenu.forEach((toDo)=>{    
     if(toDo.textContent.toUpperCase().trim().includes(filterValue)){
-      newMenu.setAttribute("style","display : block");
-      console.log("eşit")
+      toDo.setAttribute("style","display : flex");
+      console.log(toDo)
     }else{
       console.log("eşit değil")
-      newMenu.setAttribute("style","display : none !important");
+      toDo.setAttribute("style","display : none !important");
     }
   })
   

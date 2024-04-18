@@ -163,11 +163,11 @@ function search(e){
   
   newMenu.forEach((toDo)=>{    
     if(toDo.textContent.toUpperCase().trim().includes(filterValue)){
-      toDo.setAttribute("style","display : flex");
+      toDo.setAttribute("style","visibility: visible");
       console.log(toDo)
     }else{
       console.log("eşit değil")
-      toDo.setAttribute("style","display : none !important");
+      toDo.setAttribute("style","visibility: hidden !important");
     }
   })
   

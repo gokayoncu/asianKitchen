@@ -79,7 +79,13 @@ img{
   width: 70%;
   margin-left: 15%;
   background-color: transparent;
-  color: #fff;
+  &:focus{ 
+    background-color: rgb(240, 240, 240);
+    filter:drop-shadow(0 0 5px #111 ) ;
+    outline: none;
+    border-color: transparent;
+    box-shadow: 0 0 10px white;
+  }
 }
 
 .list-group{
@@ -87,4 +93,6 @@ img{
   flex-direction: row;
   position: absolute;
   left: 0;
+  
+  
 }

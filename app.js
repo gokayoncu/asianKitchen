@@ -86,6 +86,7 @@ const btnContainer = document.querySelector(".btn-container")
 const section = document.querySelector(".section-center")
 const searchInput = document.querySelector("#todoSearch")
 searchInput.addEventListener("keyup",search);
+
 const categories = menu.reduce( (values,item)=>{
     if(!values.includes(item.category)){
       values.push(item.category);
